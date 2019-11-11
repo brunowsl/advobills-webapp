@@ -1,26 +1,21 @@
 <template>
   <v-app>
     <v-app-bar app color="primary" dense dark>
-      <v-toolbar-title>
+      <v-toolbar-title to="/" style="cursor: pointer">
         <v-icon left>mdi-fingerprint</v-icon>ADVObills
       </v-toolbar-title>
     </v-app-bar>
 
     <v-content>
-      <Login />
+      <router-view></router-view>
     </v-content>
   </v-app>
 </template>
 
 <script>
-import Login from "./components/Login";
-
 export default {
   name: "App",
-
-  components: {
-    Login
-  },
+  components: {},
 
   data: () => ({})
 };

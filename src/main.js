@@ -2,12 +2,26 @@ import Vue from 'vue'
 import App from './App.vue'
 import vuetify from './plugins/vuetify';
 import VueRouter from 'vue-router'
-import Main from '@/components/Main'
+import Indexpage from '@/components/Indexpage'
+import Login from '@/components/Login'
+import Notfound from '@/components/Notfound'
+
 
 Vue.config.productionTip = false
 
-const routes = [
-  {path : '/main', component: Main},
+const routes = [{
+    path: '/mainindex',
+    component: Indexpage
+  },
+  {
+    path: '/',
+    component: Login
+  },
+
+  {
+    path: '*',
+    component: Notfound
+  },
 ]
 
 const router = new VueRouter({

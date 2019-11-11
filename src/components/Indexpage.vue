@@ -1,5 +1,5 @@
 <template>
     <div>
-        <p> MAIN PAGE </p>     
+        <p> BEM-VINDO AO ADVOBILLS</p>
     </div>
 </template>
